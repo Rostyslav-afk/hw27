@@ -1,0 +1,12 @@
+.header{
+    width: 50px;
+    height: 100vh;
+    background-color: #5c5c5c;
+    text-align: left;
+    text-align: center;
+}
+.header-text{
+    color: #fff;
+    font-size: 24px;
+    
+}
