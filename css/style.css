@@ -1,12 +1,88 @@
-.header{
-    width: 50px;
-    height: 100vh;
-    background-color: #5c5c5c;
-    text-align: left;
-    text-align: center;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-.header-text{
-    color: #fff;
-    font-size: 24px;
-    
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.header {
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -170px;
+    background-color: rgb(121, 121, 121);
+}
+
+.header:hover {
+    left: 0;
+
+    .header-text {
+        opacity: 0;
+    }
+}
+
+.header-text {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 135px;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 5px;
+    margin-left: 20px;
+}
+
+.item {}
+
+.item-link {
+    color: white;
+    font-size: 20px;
+}
+
+.item-link:hover {
+    color: orange;
+}
+
+.item-link::before {
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    border: 2px solid black;
+    margin-right: 10px;
+    transform: rotate(45deg);
 }
